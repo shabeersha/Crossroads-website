@@ -2,84 +2,135 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="Stylesheet/mainStyle.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesheet/mainStyle.css">
 
-  <title>Crossroads Academy | Home | Kerala's No. 1 Tech Youtube Channel</title>
+    <title>Crossroads Academy | Home | Kerala's No. 1 Tech Youtube Channel</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand logo" href="#"><img src="images/crossroads_logo.png" alt="Crossroads Logo" srcset=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand col-6" href="#" id="mainLogoHyperLink"><img src="images/crossroads_logo.png"
+                    class="img-fluid" alt="Crossroads Logo" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">About Us</a>
-          <a class="nav-link" href="#">What We Do</a>
-          <a class="nav-link" href="#">Contact Us</a>
-        </div>
-      </div>
-
-    </div>
-  </nav>
-  <div class="row">
-    <div class="container-fluid col-12">
-      <div id="carouselcustom" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-
-              <div class="container col-md-6 position-relative">
-                <div class="col-6 position-absolute top-50 start-50 translate-middle">
-                  <h1>Online Learning</h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <br>
-                  <a href="#" class="btn btn-danger">Know More</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">What We Do</a>
+                    <a class="nav-link" href="#">Contact Us</a>
                 </div>
-              </div>
-              <div class="container col-md-6">
-                <img class="img-fluid" src="images/sliderimg.svg" alt="">
-              </div>
-
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/img2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/img3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselcustom" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselcustom" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselcustom" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-      </div>
 
+        </div>
+    </nav>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container mt-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner d-flex align-items-center" style="height: 85vh;">
+                <div class="carousel-item active">
+                    <div class="row ">
+                        <div class="col-md-6 mt-4" id="slide1Image">
+                            <h1 class="headLine lh-1">Online Learning</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="#" class="btn btn-lg btnknowmore mt-5">Know More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="slide1Text">
+
+                            <img src="images/sliderimg1.png" class="img-fluid">
+
+                        </div>
+
+                        <!-- <div class="col-md-6 mx-auto my-auto">
+              <h1 class="headLine">Online Learning</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <a href="#" class="btn btn-lg col-6 mt-5" style="background-color:red;">Know More</a>
+            </div>
+            <div class="col-md-6">
+              <img src="images/sliderimg1.png" class="img-fluid" alt="">
+            </div> -->
+
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mt-4" id="slide2Image">
+                            <h1 class="headLine lh-1">Learn from Campus</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="#" class="btn btn-lg btnknowmore mt-5">Know More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="slide1Text">
+
+                            <img src="images/sliderimg2new.png" class="img-fluid">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mt-4" id="slide3Image">
+                            <h1 class="headLine lh-1">Career Tips & Hacks</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="#" class="btn btn-lg btnknowmore mt-5">Know More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="slide1Text">
+
+                            <img src="images/sliderimg3new.png" class="img-fluid">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                id="carousel-btn2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                id="carousel-btn1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-  </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>

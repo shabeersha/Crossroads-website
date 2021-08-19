@@ -1,44 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap');
-
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar-brand{
-    margin-right: unset !important;
-
+h1 {
+    font-weight: 700;
 }
 
-.logo img{
+.navbar-brand {
+    margin-right: unset !important;
+}
+
+.logo img {
     width: 70%;
     margin-left: 1rem;
     margin-top: 0.25rem;
 }
 
-.navbar-nav{
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbar-nav {
     margin-right: 1rem !important;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
     font-size: 20px;
-
 }
 
-.nav-link{
+.nav-link {
     font-weight: 500;
     color: black !important;
     border-radius: 10px;
+    margin: 0.3em 0.3em 0.3em 0.3em;
 }
 
-.navbar-nav .active{
+.navbar-nav .active {
     background: #FEE9E9;
+}
 
+.navbar-nav .active:hover {
+    background-color: #FB8282 !important;
 }
 
 .nav-link:hover {
-    background-color: #FB8282;
+    background: #FEE9E9;
 }
 
-.carousel-indicators [data-bs-target]{
+.btnknowmore {
+    background-color: #F4664E;
+    color: #ffffff !important;
+}
+
+.btnknowmore:hover {
     background-color: #E83618;
 }
+
+
+/* .carousel-indicators [data-bs-target]{
+    background-color: #E83618;
+} */
+
+.img-slide {
+    height: 50% !important;
+}
+
+
+/* .carousel-inner{
+    height: 60vh;
+} */
+
+.headLine {
+    font-size: 2em;
+}
+
+.headbig {
+    font-size: 4em !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #E83618;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: #F4F4F4;
+    box-shadow: 0 0 0 0.25rem;
+}
+
+button:focus:not(:focus-visible) {
+    outline: #F4F4F4;
+}
+
+.navbar-light .navbar-toggler {
+    color: #F4F4F4;
+    border-color: #F4F4F4;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3Csvg width='86' height='60' viewBox='0 0 86 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 60H86V50H0V60ZM0 35H86V25H0V35ZM0 0V10H86V0H0Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.navBgColor{
+    background:#F4F4F4;
+}
+
+/* .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='70' viewBox='0 0 42 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7.42L27.3069 35L0 62.58L7.34653 70L42 35L7.34653 0L0 7.42Z' fill='%23D3D3D3'/%3E%3C/svg%3E%0A");
+} */
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+
+
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    /* .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    } */
+    body {
+        background-image: url(../images/bg-circle.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 138% -8%;
+        background-size: 58%;
+    }
+}
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url('../images/bg-circle.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 125% -8%;
+        background-size: 45%;
+    }
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+    body {
+        background-image: url(../images/bg-circle.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 130% -19%;
+        background-size: 48%;
+    }
+}
+
+
+/* ==================================================================================== */
+
+
+/* ------------------------------------------------------------------------------------- */
