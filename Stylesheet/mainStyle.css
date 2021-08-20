@@ -76,9 +76,25 @@ h1 {
     font-size: 2em;
 }
 
+.headbigs {
+    font-size: 3.5em !important;
+}
+
 .headbig {
     font-size: 4em !important;
 }
+
+
+.headbigSd {
+    font-size: 4.5em !important;
+}
+
+
+.headbigLg {
+    font-size: 6em !important;
+}
+
+
 
 .carousel-indicators [data-bs-target] {
     height: 15px;
@@ -170,6 +186,10 @@ button:focus:not(:focus-visible) {
         background-attachment: fixed;
         background-position: 130% -19%;
         background-size: 48%;
+    }
+
+    .sliderText{
+        font-size: 1.5em;
     }
 }
 
