@@ -51,20 +51,31 @@ function KnowMoreBtn(...props){
     }
 }
 
+function carouselInner(heightValue){
+    console.log("called");
+    document.getElementById("sliderInner").style.height = heightValue;
+}
+
 //Mobile Smallscreen(320px)
 if (width <= 320) {
     sliderOrderandTextcenter();
     navBgColor();
+    carouselInner("79vh");
+
 }
 //Mobile Mediumscreen(375px)
 else if (width <= 375) {
     sliderOrderandTextcenter();
     navBgColor();
+    carouselInner("79vh");
+
 }
 //Mobile Largescreen(425px)
 else if (width <= 425) {
     sliderOrderandTextcenter();
     navBgColor();
+    KnowMoreBtn("mt-5");
+    carouselInner("79vh");
 }
 else if (width < 768) {
     sliderOrderandTextcenter();
@@ -91,6 +102,7 @@ else if (width <= 1024) {
     sliderMainHeadingLenght("headbig");
     sliderText("mt-2");
     KnowMoreBtn("mt-5");
+    carouselInner("85vh");
 }
 //Desktop Standard(1366)
 else if (width <= 1366) {
@@ -100,6 +112,8 @@ else if (width <= 1366) {
     sliderMainHeadingLenght("headbigSd");
     sliderText("mt-2");
     KnowMoreBtn("mt-5");
+    carouselInner("85vh");
+
 }
 //Desktop FullHD(1920)
 else if (width <= 1920) {
@@ -109,4 +123,6 @@ else if (width <= 1920) {
     sliderMainHeadingLenght("headbigLg");
     sliderText("mt-3");
     KnowMoreBtn("mt-5");
+    carouselInner("85vh");
+
 }
