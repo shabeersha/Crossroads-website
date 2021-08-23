@@ -39,9 +39,10 @@ function sliderMainHeadingLenght(className){
     }
 }
 
-function sliderText(...props){
+function sliderText(marginclass,fontSize){
     for (i = 0; i < sliderTextElement.length; i++) {
-        sliderTextElement.item(i).classList.add(props);
+        sliderTextElement.item(i).classList.add(marginclass);
+        sliderTextElement.item(i).style.fontSize = fontSize;
     }
 }
 
@@ -80,7 +81,7 @@ else if (width <= 425) {
 else if (width < 768) {
     sliderOrderandTextcenter();
     navBgColor();
-    sliderText("mt-2");
+    sliderText("mt-2","1em");
     KnowMoreBtn("mt-5");
     sliderMainHeadingLenght("headbigs");
 }
@@ -90,7 +91,7 @@ else if (width <= 768) {
     mainLogoHyperLink.classList.remove("col-6");
     hideCarouselBtn();
     navBgColor();
-    sliderText("mt-2");
+    sliderText("mt-2","1em");
     KnowMoreBtn("mt-5");
     sliderMainHeadingLenght("headbigs");
 }
@@ -100,7 +101,7 @@ else if (width <= 1024) {
     mainLogoHyperLink.classList.remove("col-6");
     hideCarouselBtn();
     sliderMainHeadingLenght("headbig");
-    sliderText("mt-2");
+    sliderText("mt-2","1em");
     KnowMoreBtn("mt-5");
     carouselInner("85vh");
 }
@@ -110,7 +111,7 @@ else if (width <= 1366) {
     mainLogoHyperLink.classList.remove("col-6");
     hideCarouselBtn();
     sliderMainHeadingLenght("headbigSd");
-    sliderText("mt-2");
+    sliderText("mt-2","1.5em");
     KnowMoreBtn("mt-5");
     carouselInner("85vh");
 
@@ -121,7 +122,7 @@ else if (width <= 1920) {
     mainLogoHyperLink.classList.remove("col-6");
     hideCarouselBtn();
     sliderMainHeadingLenght("headbigLg");
-    sliderText("mt-3");
+    sliderText("mt-3","1.7em");
     KnowMoreBtn("mt-5");
     carouselInner("85vh");
 

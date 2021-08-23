@@ -1,9 +1,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 * {
-    font-family: 'Cormorant', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-cormorant{
+    font-family: 'Cormorant', serif;
 }
 
 h1 {
@@ -86,26 +92,28 @@ h1 {
 }
 
 .headbig {
-    font-size: 2.1em !important;
+    font-size: 3.13em !important;
     /* font-size: 4em !important; */
 }
 
 
 .headbigSd {
     /* font-size: 4.5em !important; */
-    font-size: 2.1em !important;
+    font-size: 3.13em !important;
+    /* line-height: ; */
 
 }
 
 
 .headbigLg {
-    font-size: 2.1em !important;
+    font-size: 4.13em !important;
     /* font-size: 6em !important; */
 
 }
 
 .sliderText{
     text-align: center;
+    font-size: 1em;
 }
 
 
@@ -169,11 +177,12 @@ button:focus:not(:focus-visible) {
         padding-left: 1rem;
     } */
     body {
-        background-image: url(../images/bg-circle.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: 138% -8%;
-        background-size: 58%;
+        background-image: url("data:image/svg+xml,%3Csvg width='583' height='449' viewBox='0 0 583 449' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='330' cy='119' r='330' fill='url(%23paint0_linear)' fill-opacity='0.25'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='561' y1='-211' x2='201' y2='368' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F4664E'/%3E%3Cstop offset='0.989583' stop-color='%23FFE1A7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg width='358' height='603' viewBox='0 0 358 603' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Cpath d='M358 954C358 480.545 -17.2495 575.649 -34.2421 102.194C-51.2346 -371.26 -17.2495 954 -17.2495 954H358Z' fill='%23E83618'/%3E%3Cpath d='M279 844C279 442.01 -39.5367 522.759 -53.9612 120.769C-68.3856 -281.221 -39.5368 844 -39.5368 844H279Z' fill='%23FF9393'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: 100% -8%, 0% 100%;
+        background-size: 66%, 27%;
     }
 }
 
@@ -182,11 +191,12 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 1200px) {
     body {
-        background-image: url('../images/bg-circle.svg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: 125% -8%;
-        background-size: 45%;
+        background-image: url("data:image/svg+xml,%3Csvg width='583' height='449' viewBox='0 0 583 449' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='330' cy='119' r='330' fill='url(%23paint0_linear)' fill-opacity='0.25'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='561' y1='-211' x2='201' y2='368' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F4664E'/%3E%3Cstop offset='0.989583' stop-color='%23FFE1A7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg width='358' height='603' viewBox='0 0 358 603' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Cpath d='M358 954C358 480.545 -17.2495 575.649 -34.2421 102.194C-51.2346 -371.26 -17.2495 954 -17.2495 954H358Z' fill='%23E83618'/%3E%3Cpath d='M279 844C279 442.01 -39.5367 522.759 -53.9612 120.769C-68.3856 -281.221 -39.5368 844 -39.5368 844H279Z' fill='%23FF9393'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: 100% -26%, 0% 100%;
+        background-size: 50%, 27%;
     }
 }
 
@@ -195,11 +205,12 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 1400px) {
     body {
-        background-image: url(../images/bg-circle.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: 130% -19%;
-        background-size: 48%;
+        background-image: url("data:image/svg+xml,%3Csvg width='583' height='449' viewBox='0 0 583 449' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='330' cy='119' r='330' fill='url(%23paint0_linear)' fill-opacity='0.25'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='561' y1='-211' x2='201' y2='368' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F4664E'/%3E%3Cstop offset='0.989583' stop-color='%23FFE1A7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg width='358' height='603' viewBox='0 0 358 603' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Cpath d='M358 954C358 480.545 -17.2495 575.649 -34.2421 102.194C-51.2346 -371.26 -17.2495 954 -17.2495 954H358Z' fill='%23E83618'/%3E%3Cpath d='M279 844C279 442.01 -39.5367 522.759 -53.9612 120.769C-68.3856 -281.221 -39.5368 844 -39.5368 844H279Z' fill='%23FF9393'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: 114% -8%, 0% 100%;
+        background-size: 44%, 27%;
     }
 
     .sliderText{
