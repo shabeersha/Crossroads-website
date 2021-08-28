@@ -148,20 +148,56 @@ button:focus:not(:focus-visible) {
     background:#F4F4F4;
 }
 
-/* .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='70' viewBox='0 0 42 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 7.42L27.3069 35L0 62.58L7.34653 70L42 35L7.34653 0L0 7.42Z' fill='%23D3D3D3'/%3E%3C/svg%3E%0A");
-} */
+.pl0{
+    padding-left: unset !important;
+}
+
+.pr0{
+    padding-right: unset !important;
+}
+
+
+
+/* Player Style */
+
+:root{
+    --plyr-color-main: #e83618;
+}
+.plyr{
+    border-radius: 6px;
+}
+/* ------------------ */
+
+
+.card{
+    border: unset;
+}
+
+#playlist{
+    background-color: #FF9393;
+    /* -webkit-filter: blur(15px); */
+    border-radius: 6px;
+    height: inherit;
+}
+#list {
+    height: 36vw;
+}
+
+.videoItems{
+    /* border-radius: 6px; */
+}
+
+
+
 
 
 /* // X-Small devices (portrait phones, less than 576px) */
-
-
 /* // No media query for `xs` since this is the default in Bootstrap */
-
-
 /* // Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    
+}
 
 
 /* // Medium devices (tablets, 768px and up) */
@@ -183,6 +219,10 @@ button:focus:not(:focus-visible) {
         background-attachment: fixed, fixed;
         background-position: 100% -8%, 0% 100%;
         background-size: 66%, 27%;
+    }
+
+    .videoName{
+        font-size: 0.89rem;
     }
 }
 
@@ -216,6 +256,8 @@ button:focus:not(:focus-visible) {
     .sliderText{
         font-size: 1.5em;
     }
+
+    
 }
 
 

@@ -17,6 +17,7 @@ let i = 0;
 
 console.log(width);
 console.log(height);
+// console.log(document.getElementById("player1").childNodes,"//////////////////////////");
 
 function hideCarouselBtn() {
     document.getElementById("carousel-btn1").classList.add("visually-hidden");
@@ -77,6 +78,7 @@ else if (width <= 425) {
     navBgColor();
     KnowMoreBtn("mt-5");
     carouselInner("79vh");
+    // document.getElementById("navContainerFluid").classList.add("pl-0","pr-0");
 }
 else if (width < 768) {
     sliderOrderandTextcenter();
@@ -127,3 +129,7 @@ else if (width <= 1920) {
     carouselInner("85vh");
 
 }
+
+
+
+
