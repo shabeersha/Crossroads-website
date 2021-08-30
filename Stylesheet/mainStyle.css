@@ -189,7 +189,19 @@ button:focus:not(:focus-visible) {
 
 
 .ytp-chrome-top{
-    visibility: hidden;
+    display: none;
+}
+
+.nowPlaying{
+    color: white;
+    background-color: #000000cc;
+    transform: translate(0%,-362%)!important;
+    padding: 1px 5px 1px 10px;
+    font-size: 0.8em;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 

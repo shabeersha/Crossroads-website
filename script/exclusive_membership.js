@@ -11,6 +11,7 @@ function getViewportSize() {
 let { width, height } = getViewportSize()
 let mainLogoHyperLink = document.getElementById("mainLogoHyperLink");
 let headLine = document.getElementsByClassName("headLine");
+const player1 = new Plyr('#player1', { title: '100k Coding Challenge' });
 let i = 0;
 
 console.log(width);
@@ -21,25 +22,36 @@ console.log(height);
 
 
 
-function navBgColor(){
+function navBgColor() {
     document.getElementById("navbar").classList.add("navBgColor");
 }
 
-function sliderMainHeadingLenght(className){
+function sliderMainHeadingLenght(className) {
     for (i = 0; i < headLine.length; i++) {
         headLine.item(i).classList.add(className);
     }
 }
 
-function open100kPlayer(){
+function open100kPlayer() {
     document.getElementById("100kCodeingChallengeMock").remove();
     document.getElementById("100kplayerandplaylist").style.display = "block";
+    player1.play();
+
+    // document.getElementsByClassName("ytp-chrome-top").style.display="none";
+    // document.getElementsByClassName("ytp-pause-overlay").style.display="none";
 }
 
-function playnow(){
-    
+async function playnow(property) {
 
-
+    player1.source = {
+        type: 'video',
+            sources: [
+                {
+                    src: property,
+                    provider: 'youtube',
+                },
+            ],
+    };
 }
 
 new SimpleBar(document.getElementById('list'));
@@ -50,18 +62,18 @@ new SimpleBar(document.getElementById('list'));
 //Mobile Smallscreen(320px)
 if (width <= 320) {
     navBgColor();
-    document.getElementById("navContainerFluid").classList.add("pl0","pr0");
+    document.getElementById("navContainerFluid").classList.add("pl0", "pr0");
 
 }
 //Mobile Mediumscreen(375px)
 else if (width <= 375) {
     navBgColor();
-    document.getElementById("navContainerFluid").classList.add("pl0","pr0");
+    document.getElementById("navContainerFluid").classList.add("pl0", "pr0");
 }
 //Mobile Largescreen(425px)
 else if (width <= 425) {
     navBgColor();
-    document.getElementById("navContainerFluid").classList.add("pl0","pr0");
+    document.getElementById("navContainerFluid").classList.add("pl0", "pr0");
 }
 else if (width < 768) {
     navBgColor();

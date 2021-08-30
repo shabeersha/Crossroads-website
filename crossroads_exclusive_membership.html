@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="display: none;" id="100kplayerandplaylist">
+    <div class="container-fluid mb-5" style="display: none;" id="100kplayerandplaylist">
         <div class="row justify-content-center">
             <div class="col-md-9 col-lg-8" id="playerContainer">
                 <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="pDmEYRhyusU"></div>
@@ -70,9 +70,12 @@
 
 
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
-                        <div class="col-5 pl0 pr0">
+
+
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded pointer" onclick="playnow('pDmEYRhyusU')">
+                        <div class="col-5 pl0 pr0 position-relative">
                             <img src="images/part1.webp" class="img-fluid m-2 rounded">
+                            <!-- <p class="position-absolute nowPlaying" id="pDmEYRhyusU">Now Playing</p> -->
                         </div>
                         <div class="col-7 align-self-center">
                             <h5 class="videoName">Part 1 | Introduction To Programming </h5>
@@ -83,7 +86,9 @@
 
 
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+
+
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded pointer" onclick="playnow('qGGqnzvKjmM')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part2.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -92,7 +97,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('W7s0upNfcKY')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part3.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -101,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('YfaJzXFbFcQ')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part4.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -110,7 +115,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('d0drJeqmiws')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part5.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -119,7 +124,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow()">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('lFgyEWxNI58')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part6.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -128,7 +133,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('G1FahZ5Sgik')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part7.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -137,7 +142,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('MxuTGyBz9BA')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part8.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -146,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('MRFD3Cnug1Q')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part9.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -155,7 +160,7 @@
                         </div>
                     </div>
 
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('AUxawaW4DAc')">
                         <div class="col-5 pl0 pr0">
                             <img src="images/part10.webp" class="img-fluid m-2 rounded">
                         </div>
@@ -163,11 +168,6 @@
                             <h5 class="videoName">Part 10 | Calculator Project From Scratch</h5>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </div>
         </div>
@@ -209,9 +209,7 @@
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
 
-    <script>
-        const player1 = new Plyr('#player1');
-    </script>
+   
 
     <script src="script/exclusive_membership.js"></script>
 </body>
