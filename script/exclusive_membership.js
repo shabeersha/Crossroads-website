@@ -32,6 +32,13 @@ function sliderMainHeadingLenght(className){
 }
 
 function open100kPlayer(){
+    document.getElementById("100kCodeingChallengeMock").remove();
+    document.getElementById("100kplayerandplaylist").style.display = "block";
+}
+
+function playnow(){
+    
+
 
 }
 
@@ -69,6 +76,7 @@ else if (width <= 768) {
 else if (width <= 1024) {
     mainLogoHyperLink.classList.add("logo");
     mainLogoHyperLink.classList.remove("col-6");
+    document.getElementById("playerContainer").classList.add("pl0");
 }
 //Desktop Standard(1366)
 else if (width <= 1366) {

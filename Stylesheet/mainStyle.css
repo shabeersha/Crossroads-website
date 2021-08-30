@@ -174,7 +174,7 @@ button:focus:not(:focus-visible) {
 }
 
 #playlist{
-    background-color: #FF9393;
+    background-color: #c9c9c9;
     /* -webkit-filter: blur(15px); */
     border-radius: 6px;
     height: inherit;
@@ -185,6 +185,11 @@ button:focus:not(:focus-visible) {
 
 .videoItems{
     /* border-radius: 6px; */
+}
+
+
+.ytp-chrome-top{
+    visibility: hidden;
 }
 
 
@@ -238,6 +243,10 @@ button:focus:not(:focus-visible) {
         background-position: 100% -26%, 0% 100%;
         background-size: 50%, 27%;
     }
+
+    .videoName{
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -255,6 +264,10 @@ button:focus:not(:focus-visible) {
 
     .sliderText{
         font-size: 1.5em;
+    }
+
+    .videoName{
+        font-size: 1.25rem;
     }
 
     

@@ -34,10 +34,9 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             <a class="nav-link" href="about.html">About Us</a>
                             <a class="nav-link" href="what_we_do.html">What We Do</a>
                             <a class="nav-link" href="contact_us.html">Contact Us</a>
@@ -53,14 +52,15 @@
             <h1 class="mb-5 text-center">ARE YOU <span style="color: red;">BEGINNER..?</span><br>Watch Tutorial to Learn
                 <span style="color: red;">Basic Programming</span>
             </h1>
-            <div class="col-12" id="100kCodeingChallenge">
+            <div class="col-12 text-center" id="100kCodeingChallengeMock">
                 <!-- <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="pDmEYRhyusU"></div> -->
                 <img src="images/100k-thumb.png" alt="100k coding challenge Thumbnail" class="img-fluid"
-                    style="cursor:pointer;" onclick="open100kPlayer()">
+                    style="cursor:pointer; height: 36vw;" onclick="open100kPlayer()">
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5">
+
+    <div class="container-fluid" style="display: none;" id="100kplayerandplaylist">
         <div class="row justify-content-center">
             <div class="col-md-9 col-lg-8" id="playerContainer">
                 <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="pDmEYRhyusU"></div>
@@ -85,57 +85,84 @@
 
                     <div class="row bg-light videoItems mt-3 mb-3 rounded">
                         <div class="col-5 pl0 pr0">
-                            <img src="images/part1.webp" class="img-fluid m-2 rounded">
+                            <img src="images/part2.webp" class="img-fluid m-2 rounded">
                         </div>
                         <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+                            <h5 class="videoName">Part 2 | Variables Datatypes & I/O Operations</h5>
                         </div>
                     </div>
 
                     <div class="row bg-light videoItems mt-3 mb-3 rounded">
                         <div class="col-5 pl0 pr0">
-                            <img src="images/part1.webp" class="img-fluid m-2 rounded">
+                            <img src="images/part3.webp" class="img-fluid m-2 rounded">
                         </div>
                         <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+                            <h5 class="videoName">Part 3 | Conditional Statements IF, IF ELSE, SWITCH</h5>
                         </div>
                     </div>
 
                     <div class="row bg-light videoItems mt-3 mb-3 rounded">
                         <div class="col-5 pl0 pr0">
-                            <img src="images/part1.webp" class="img-fluid m-2 rounded">
+                            <img src="images/part4.webp" class="img-fluid m-2 rounded">
                         </div>
                         <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
-                        </div>
-                    </div>
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/part1.webp" class="img-fluid m-2 rounded">
-                        </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+                            <h5 class="videoName">Part 4 | Loops: FOR Loop</h5>
                         </div>
                     </div>
 
                     <div class="row bg-light videoItems mt-3 mb-3 rounded">
                         <div class="col-5 pl0 pr0">
-                            <img src="images/part1.webp" class="img-fluid m-2 rounded">
+                            <img src="images/part5.webp" class="img-fluid m-2 rounded">
                         </div>
                         <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+                            <h5 class="videoName">Part 5 | Array and Array Operations</h5>
+                        </div>
+                    </div>
+
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow()">
+                        <div class="col-5 pl0 pr0">
+                            <img src="images/part6.webp" class="img-fluid m-2 rounded">
+                        </div>
+                        <div class="col-7 align-self-center">
+                            <h5 class="videoName">Part 6 | Functions and Type of Functions</h5>
                         </div>
                     </div>
 
                     <div class="row bg-light videoItems mt-3 mb-3 rounded">
                         <div class="col-5 pl0 pr0">
-                            <img src="images/part1.webp" class="img-fluid m-2 rounded">
+                            <img src="images/part7.webp" class="img-fluid m-2 rounded">
                         </div>
                         <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+                            <h5 class="videoName">Part 7 | OOP Concepts: Class and Objects</h5>
                         </div>
                     </div>
 
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                        <div class="col-5 pl0 pr0">
+                            <img src="images/part8.webp" class="img-fluid m-2 rounded">
+                        </div>
+                        <div class="col-7 align-self-center">
+                            <h5 class="videoName">Part 8 | Constructors, Inheritance, Polymorphism</h5>
+                        </div>
+                    </div>
+
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                        <div class="col-5 pl0 pr0">
+                            <img src="images/part9.webp" class="img-fluid m-2 rounded">
+                        </div>
+                        <div class="col-7 align-self-center">
+                            <h5 class="videoName">Part 9 | Abstract Class, Exceptions, Threads</h5>
+                        </div>
+                    </div>
+
+                    <div class="row bg-light videoItems mt-3 mb-3 rounded">
+                        <div class="col-5 pl0 pr0">
+                            <img src="images/part10.webp" class="img-fluid m-2 rounded">
+                        </div>
+                        <div class="col-7 align-self-center">
+                            <h5 class="videoName">Part 10 | Calculator Project From Scratch</h5>
+                        </div>
+                    </div>
 
 
 
@@ -149,7 +176,7 @@
 
 
 
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
         <div class="row">
             <h1 class="text-center mb-3"> If You are Good in Basic Programming,<br> Move to These Tutorials</h1>
             <div class="container">
@@ -167,7 +194,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
