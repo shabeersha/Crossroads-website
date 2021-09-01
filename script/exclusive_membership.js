@@ -52,6 +52,8 @@ async function playnow(property) {
                 },
             ],
     };
+
+    console.log(player1.ready);
 }
 
 new SimpleBar(document.getElementById('list'));

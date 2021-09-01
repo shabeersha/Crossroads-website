@@ -62,14 +62,14 @@ function carouselInner(heightValue){
 if (width <= 320) {
     sliderOrderandTextcenter();
     navBgColor();
-    carouselInner("79vh");
+    carouselInner("87vh");
 
 }
 //Mobile Mediumscreen(375px)
 else if (width <= 375) {
     sliderOrderandTextcenter();
     navBgColor();
-    carouselInner("79vh");
+    carouselInner("87vh");
 
 }
 //Mobile Largescreen(425px)
