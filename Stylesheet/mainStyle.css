@@ -51,6 +51,10 @@ h1 {
     margin: 0.3em 0.3em 0.3em 0.3em;
 }
 
+.text-white{
+    color: #ffffff !important;
+}
+
 .navbar-nav .active {
     background: #FEE9E9;
 }
@@ -61,6 +65,7 @@ h1 {
 
 .nav-link:hover {
     background: #FEE9E9;
+    color: #000000 !important;
 }
 
 .btnknowmore {
@@ -163,6 +168,8 @@ button:focus:not(:focus-visible) {
 
 
 
+
+
 /* Player Style */
 
 :root{
@@ -209,6 +216,51 @@ button:focus:not(:focus-visible) {
     cursor: pointer;
 }
 
+.inputFieldStyle{
+    background-color: unset;
+    border-color:white;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-radius: unset;
+    color: #FFFFFF;
+}
+
+.inputFieldStyle:focus{
+    background-color: unset;
+    border-color:white;
+    box-shadow: unset;
+    color: #FFFFFF;
+}
+
+.form-floating> textarea:not(:placeholder-shown)~label{
+    transform: scale(.70) translateY(-3rem) translateX(.15rem);
+}
+
+.form-floating>.form-control:focus~label , .form-floating>.form-control:not(:placeholder-shown)~label{
+    transform: scale(.70) translateY(-2rem) translateX(.15rem);
+}
+
+.form-floating>label{
+    padding: 1em 0 0 0;
+    top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.btnSubmit{
+    background: #E83618;
+    color: #FFFFFF;
+}
+
+.contactDiv{
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.socialIcons{
+    margin-top: 5em ;
+    margin-bottom: 2em;
+}
+
 
 
 
@@ -235,7 +287,7 @@ button:focus:not(:focus-visible) {
         padding-right: 1rem;
         padding-left: 1rem;
     } */
-    body {
+    .bgShape {
         background-image: url("/images/bgSquareShape.png");
         background-repeat: no-repeat, no-repeat;
         background-attachment: fixed, fixed;
@@ -252,12 +304,16 @@ button:focus:not(:focus-visible) {
 /* // X-Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-    body {
+    .bgShape {
         background-image: url("/images/bgSquareShape.png");
         background-repeat: no-repeat, no-repeat;
         background-attachment: fixed, fixed;
         background-position: 100% 0%, 0% 100%;
         background-size: 50%, 27%;
+    }
+
+    .bgDualtone{
+        background: linear-gradient(90deg, #1B1C1E 81%, #E83618 19%);
     }
 
     .videoName{
@@ -269,12 +325,16 @@ button:focus:not(:focus-visible) {
 /* // XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
-    body {
+    .bgShape {
         background-image: url("/images/bgSquareShape.png");
         background-repeat: no-repeat, no-repeat;
         background-attachment: fixed, fixed;
         background-position: 100% 0%, 0% 100%;
         background-size: 34%, 27%;
+    }
+
+    .bgDualtone{
+
     }
 
     .sliderText{

@@ -58,6 +58,8 @@ function carouselInner(heightValue){
     document.getElementById("sliderInner").style.height = heightValue;
 }
 
+
+
 //Mobile Smallscreen(320px)
 if (width <= 320) {
     sliderOrderandTextcenter();
