@@ -261,7 +261,13 @@ button:focus:not(:focus-visible) {
     margin-bottom: 2em;
 }
 
-
+.col6FHD{
+    
+        flex: 0 0 auto;
+        width: 40%;
+        margin-left: 10%;
+    
+}
 
 
 
@@ -283,16 +289,8 @@ button:focus:not(:focus-visible) {
 /* // Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-    /* .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    } */
-    .bgShape {
-        background-image: url("/images/bgSquareShape.png");
-        background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: 100% 0%, 0% 100%;
-        background-size: 52%, 27%;
+    .bgDualtone{
+        background: linear-gradient(90deg, #1B1C1E 75%, #E83618 25%);
     }
 
     .videoName{
@@ -304,14 +302,6 @@ button:focus:not(:focus-visible) {
 /* // X-Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-    .bgShape {
-        background-image: url("/images/bgSquareShape.png");
-        background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: 100% 0%, 0% 100%;
-        background-size: 50%, 27%;
-    }
-
     .bgDualtone{
         background: linear-gradient(90deg, #1B1C1E 81%, #E83618 19%);
     }
@@ -325,17 +315,10 @@ button:focus:not(:focus-visible) {
 /* // XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
-    .bgShape {
-        background-image: url("/images/bgSquareShape.png");
-        background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
-        background-position: 100% 0%, 0% 100%;
-        background-size: 34%, 27%;
-    }
-
     .bgDualtone{
-
+        background: linear-gradient(90deg, #1B1C1E 81%, #E83618 19%);
     }
+   
 
     .sliderText{
         font-size: 1.5em;
