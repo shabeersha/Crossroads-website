@@ -25,9 +25,9 @@ function hideCarouselBtn() {
 }
 
 function sliderOrderandTextcenter() {
-    document.getElementById("slide1Image").classList.add("order-1", "text-center");
-    document.getElementById("slide2Image").classList.add("order-1", "text-center");
-    document.getElementById("slide3Image").classList.add("order-1", "text-center");
+    document.getElementById("slide1Text").classList.add("order-1", "text-center");
+    document.getElementById("slide2Text").classList.add("order-1", "text-center");
+    document.getElementById("slide3Text").classList.add("order-1", "text-center");
 }
 
 function navBgColor(){
