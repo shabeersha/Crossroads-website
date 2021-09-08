@@ -318,7 +318,14 @@ button:focus:not(:focus-visible) {
     .bgDualtone{
         background: linear-gradient(90deg, #1B1C1E 81%, #E83618 19%);
     }
-   
+
+    .bgSquareShape{
+        background-image: url("/images/bgSquareShape.png");
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: 100% 0%, 0% 100%;
+        background-size: 52%, 27%;
+    }
 
     .sliderText{
         font-size: 1.5em;
@@ -326,13 +333,5 @@ button:focus:not(:focus-visible) {
 
     .videoName{
         font-size: 1.25rem;
-    }
-
-    
+    }    
 }
-
-
-/* ==================================================================================== */
-
-
-/* ------------------------------------------------------------------------------------- */
