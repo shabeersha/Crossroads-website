@@ -1,15 +1,22 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-* {
+/* Common Style -------------------------------------------------------------- */
+
+.font-poppins{
     font-family: 'Poppins', sans-serif;
 }
 
-.font-cormorant{
+/* .font-cormorant{
     font-family: 'Cormorant', serif;
+} */
+
+.font-nunito{
+    font-family: 'Nunito', sans-serif;
 }
 
 h1 {
@@ -68,13 +75,53 @@ h1 {
     color: #000000 !important;
 }
 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: #F4F4F4;
+    box-shadow: 0 0 0 0.25rem;
+}
+
+.navbar-light .navbar-toggler {
+    color: #F4F4F4;
+    border-color: #F4F4F4;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3Csvg width='86' height='60' viewBox='0 0 86 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 60H86V50H0V60ZM0 35H86V25H0V35ZM0 0V10H86V0H0Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.navBgColor{
+    background:#F4F4F4;
+}
+
+.pl0{
+    padding-left: unset !important;
+}
+
+.pr0{
+    padding-right: unset !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Homepage Style -------------------------------------------------------------- */
+
 .btnknowmore {
-    background-color: #F4664E;
+    background-color: #E9301C;
     color: #ffffff !important;
 }
 
 .btnknowmore:hover {
-    background-color: #E83618;
+    background-color: #D5220E;
 }
 
 
@@ -126,8 +173,6 @@ h1 {
     font-size: 1em;
 }
 
-
-
 .carousel-indicators [data-bs-target] {
     height: 15px;
     width: 15px;
@@ -135,54 +180,23 @@ h1 {
     background-color: #E83618;
 }
 
-.navbar-toggler:focus {
-    text-decoration: none;
-    outline: #F4F4F4;
-    box-shadow: 0 0 0 0.25rem;
-}
-
 button:focus:not(:focus-visible) {
     outline: #F4F4F4;
 }
 
-.navbar-light .navbar-toggler {
-    color: #F4F4F4;
-    border-color: #F4F4F4;
-}
-
-.navbar-light .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml,%3Csvg width='86' height='60' viewBox='0 0 86 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 60H86V50H0V60ZM0 35H86V25H0V35ZM0 0V10H86V0H0Z' fill='black'/%3E%3C/svg%3E%0A");
-}
-
-.navBgColor{
-    background:#F4F4F4;
-}
-
-.pl0{
-    padding-left: unset !important;
-}
-
-.pr0{
-    padding-right: unset !important;
-}
 
 
 
 
 
-/* Player Style */
+
+/* Player Style -------------------------------------------------------------- */
 
 :root{
     --plyr-color-main: #e83618;
 }
 .plyr{
     border-radius: 6px;
-}
-/* ------------------ */
-
-
-.card{
-    border: unset;
 }
 
 #playlist{
@@ -194,11 +208,6 @@ button:focus:not(:focus-visible) {
 #list {
     height: 36vw;
 }
-
-.videoItems{
-    /* border-radius: 6px; */
-}
-
 
 .ytp-chrome-top{
     display: none;
@@ -212,9 +221,9 @@ button:focus:not(:focus-visible) {
     font-size: 0.8em;
 }
 
-.pointer{
-    cursor: pointer;
-}
+
+
+/* ContactusPage Style -------------------------------------------------------------- */
 
 .inputFieldStyle{
     background-color: unset;
@@ -272,6 +281,8 @@ button:focus:not(:focus-visible) {
 
 
 
+
+
 /* // X-Small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
@@ -293,6 +304,14 @@ button:focus:not(:focus-visible) {
         background: linear-gradient(90deg, #1B1C1E 75%, #E83618 25%);
     }
 
+    .bgSquareShape{
+        background-image: url("/images/bgSquareShape.png");
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: 100% 0%, 0% 100%;
+        background-size: 52%, 27%;
+    }
+
     .videoName{
         font-size: 0.89rem;
     }
@@ -304,6 +323,14 @@ button:focus:not(:focus-visible) {
 @media (min-width: 1200px) {
     .bgDualtone{
         background: linear-gradient(90deg, #1B1C1E 81%, #E83618 19%);
+    }
+
+    .bgSquareShape{
+        background-image: url("/images/bgSquareShape.png");
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: 100% 0%, 0% 100%;
+        background-size: 52%, 27%;
     }
 
     .videoName{
