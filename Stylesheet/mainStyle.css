@@ -31,9 +31,8 @@ h1 {
     width: 70%;
     margin-left: 1rem;
     margin-top: 0.25rem;
-
     padding-top: 1.7vw;
-    padding-left: 1vw;
+    padding-left: 1vw; 
 
 }
 
@@ -145,11 +144,13 @@ h1 {
 
 .headbigs {
     font-size: 2.1em !important;
+    font-weight: 800;
     /* font-size: 3.5em !important; */
 }
 
 .headbig {
     font-size: 3.13em !important;
+    font-weight: 800;
     /* font-size: 4em !important; */
 }
 
@@ -157,21 +158,19 @@ h1 {
 .headbigSd {
     font-size: 2.5rem !important;
     font-weight: 800;
-    /* line-height: ; */
-
 }
 
 
 .headbigLg {
     font-size: 4.13em !important;
-    /* font-size: 6em !important; */
-
+    font-weight: 800;
 }
 
 .sliderText{
     text-align: center;
     font-size: 1em;
     font-weight: 300;
+    color: black !important;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -352,7 +351,7 @@ button:focus:not(:focus-visible) {
         background-repeat: no-repeat, no-repeat;
         background-attachment: fixed, fixed;
         background-position: 100% 0%, 0% 100%;
-        background-size: 52%, 27%;
+        background-size: 50%, 27%;
     }
 
     .sliderText{

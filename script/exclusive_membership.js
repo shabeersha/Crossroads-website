@@ -11,7 +11,7 @@ function getViewportSize() {
 let { width, height } = getViewportSize()
 let mainLogoHyperLink = document.getElementById("mainLogoHyperLink");
 let headLine = document.getElementsByClassName("headLine");
-const player1 = new Plyr('#player1', { title: '100k Coding Challenge' });
+// const player1 = new Plyr('#player1', { title: '100k Coding Challenge' });
 let i = 0;
 
 console.log(width);
@@ -56,7 +56,7 @@ async function playnow(property) {
     console.log(player1.ready);
 }
 
-new SimpleBar(document.getElementById('list'));
+// new SimpleBar(document.getElementById('list'));
 
 
 
