@@ -105,6 +105,11 @@ h1 {
     cursor: pointer;
 }
 
+.btnColorPrimary{
+    background-color: #E9301C;
+    color: #FFFFFF;
+}
+
 
 
 
@@ -184,6 +189,109 @@ button:focus:not(:focus-visible) {
     outline: #F4F4F4;
 }
 
+/* Exclusive Members ---------------------------------------------------------- */
+
+.ExMemHead{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+#ExMemHead1{
+    font-weight: 800;
+}
+
+#ExMemHead2{
+    font-weight: 700;
+}
+
+.ExMemPara{
+    margin-left: 1.8rem;
+    font-size: 1.35rem;
+}
+
+#ExMemPara1, #ExMemPara2 {
+    text-align: justify;
+}
+
+#ExMemPara3{
+    text-align: center;
+}
+
+#ExMemHead3{
+    font-size: 2.5rem;
+    color: #E9301C;
+    font-weight: 800;
+    margin-top: 7rem;
+}
+
+#ExMemHead4{
+    font-size: 2.13rem;
+    font-weight: 700;
+}
+
+#ExMemDropDownMenuButton1{
+    background-color: #EBEBEB;
+    color: #000000;
+    font-size: 1.5em;
+    border-color: transparent;
+}
+
+#ExMemDropDownMenuButton1 :hover{
+    border-color: transparent;
+}
+
+#ExMemDropDownMenuButton1 :focus{
+    box-shadow: none;
+}
+
+
+#ExMemDropDownMenuButton1 span{
+    margin-right: 3.5rem;
+}
+
+
+#ExclusiveMembershipSection{
+    background-color: #E9301C;
+    margin-top: 7rem;
+}
+
+
+#ExclusiveMembershipSection h1{
+    font-weight: 900;
+}
+
+
+.btnContactUs{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 1.29rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ExMemContent{
+    font-size: 1.3rem;
+}
+
+
+#ExMemBenifitsSection{
+    margin-top: 5rem;
+}
+
+.card{
+    background-image: url(../images/ExMembership/cardBg.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    border: none;
+}
+
+.cardBtn{
+    background-color: #E9301C;
+    color: #FFFFFF;
+    border-radius: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
 
 
 
@@ -223,7 +331,7 @@ button:focus:not(:focus-visible) {
 
 
 
-/* ContactusPage Style -------------------------------------------------------------- */
+/* ContactUsPage Style -------------------------------------------------------------- */
 
 .inputFieldStyle{
     background-color: unset;
@@ -307,7 +415,7 @@ button:focus:not(:focus-visible) {
     .bgSquareShape{
         background-image: url("/images/bgSquareShape.png");
         background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
+        /* background-attachment: fixed, fixed; */
         background-position: 100% 0%, 0% 100%;
         background-size: 52%, 27%;
     }
@@ -328,7 +436,7 @@ button:focus:not(:focus-visible) {
     .bgSquareShape{
         background-image: url("/images/bgSquareShape.png");
         background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
+        /* background-attachment: fixed, fixed; */
         background-position: 100% 0%, 0% 100%;
         background-size: 52%, 27%;
     }
@@ -349,7 +457,7 @@ button:focus:not(:focus-visible) {
     .bgSquareShape{
         background-image: url("/images/bgSquareShape.png");
         background-repeat: no-repeat, no-repeat;
-        background-attachment: fixed, fixed;
+        /* background-attachment: fixed, fixed; */
         background-position: 100% 0%, 0% 100%;
         background-size: 50%, 27%;
     }
