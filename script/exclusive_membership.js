@@ -12,6 +12,10 @@ let { width, height } = getViewportSize()
 let mainLogoHyperLink = document.getElementById("mainLogoHyperLink");
 let headLine = document.getElementsByClassName("headLine");
 const player1 = new Plyr('#player1', { title: '100k Coding Challenge' });
+const main100KThumbnail = document.getElementById('Main100KThumbnail');
+const playlist = document.getElementById('playlist');
+const list = document.getElementById('list');
+const ExMemHead3 = document.getElementById('ExMemHead3');
 let i = 0;
 
 console.log(width);
@@ -75,6 +79,10 @@ if (width <= 320) {
     document.getElementById("ExMemPara2").style.fontSize = "1em";
     document.getElementById("ExMemHead2").style.fontSize = "2em";
     document.getElementById("ExMemPara3").style.fontSize = "1em";
+    playlist.classList.add("mt-3");
+    list.style.height="118vw";
+    ExMemHead3.style.marginTop="2rem";
+    
 
 
 }
@@ -88,6 +96,10 @@ else if (width <= 375) {
     document.getElementById("ExMemPara2").style.fontSize = "1em";
     document.getElementById("ExMemHead2").style.fontSize = "2em";
     document.getElementById("ExMemPara3").style.fontSize = "1em";
+    playlist.classList.add("mt-3");
+    list.style.height="118vw";
+    ExMemHead3.style.marginTop="2rem";
+
 
 
 }
@@ -103,6 +115,8 @@ else if (width <= 768) {
     mainLogoHyperLink.classList.add("logo");
     mainLogoHyperLink.classList.remove("col-6");
     navBgColor();
+    list.style.height="36vw"
+    ExMemHead3.style.marginTop="7rem";
 }
 //Desktop Old(1024px)
 else if (width <= 1024) {
@@ -110,12 +124,21 @@ else if (width <= 1024) {
     mainLogoHyperLink.classList.remove("col-6");
     document.getElementById("playerContainer").classList.add("pl0");
     document.getElementById("section01").style.height="80vh";
+    main100KThumbnail.style.height="36vw";
+    list.style.height="36vw";
+    ExMemHead3.style.marginTop="7rem";
+
+    
 }
 //Desktop Standard(1366)
 else if (width <= 1366) {
     mainLogoHyperLink.classList.add("logo");
     mainLogoHyperLink.classList.remove("col-6");
     document.getElementById("section01").style.height="80vh";
+    main100KThumbnail.style.height="36vw";
+    list.style.height="36vw";
+    ExMemHead3.style.marginTop="7rem";
+
 
 }
 //Desktop FullHD(1920)
@@ -123,9 +146,9 @@ else if (width <= 1920) {
     mainLogoHyperLink.classList.add("logo");
     mainLogoHyperLink.classList.remove("col-6");
     document.getElementById("section01").style.height="80vh";
+    main100KThumbnail.style.height="36vw";
+    list.style.height="36vw";
+    ExMemHead3.style.marginTop="7rem";
+
 
 }
-
-
-
-

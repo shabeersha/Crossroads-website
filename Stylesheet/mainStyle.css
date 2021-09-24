@@ -221,7 +221,7 @@ button:focus:not(:focus-visible) {
     font-size: 2.5rem;
     color: #E9301C;
     font-weight: 800;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
 }
 
 #ExMemHead4{
@@ -253,6 +253,10 @@ button:focus:not(:focus-visible) {
 #ExclusiveMembershipSection{
     background-color: #E9301C;
     margin-top: 7rem;
+}
+
+#Main100KThumbnail{
+    cursor:pointer; 
 }
 
 
@@ -293,8 +297,13 @@ button:focus:not(:focus-visible) {
     padding: 0.5rem 1rem;
 }
 
+.tutorialThumb{
+    cursor: pointer;
+}
 
-
+.playButton{
+    max-width: 12vw;
+}
 
 
 
@@ -313,9 +322,9 @@ button:focus:not(:focus-visible) {
     border-radius: 6px;
     height: inherit;
 }
-#list {
+/* #list {
     height: 36vw;
-}
+} */
 
 .ytp-chrome-top{
     display: none;

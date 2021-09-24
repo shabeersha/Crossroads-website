@@ -226,114 +226,124 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center" id="100kCodeingChallengeMock">
-                <img src="images/100K/100k-thumb.png" alt="100k coding challenge Thumbnail" class="img-fluid rounded"
-                    style="cursor:pointer; height: 36vw;" onclick="open100kPlayer()">
+                <!-- <img src="images/100kMainThumbnail-min.png" alt="100k coding challenge Thumbnail" class="img-fluid rounded"
+                    style="cursor:pointer; height: 36vw;" onclick="open100kPlayer()"> -->
+
+                <div class="position-relative" onclick="open100kPlayer()">
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                        <img src="images/playBtn.png" alt="100k coding challenge Play Button" style="cursor:pointer;"
+                            class="img-fluid playButton">
+                    </div>
+                    <div>
+                        <img src="images/100kMainThumbnail-min.png" alt="100k coding challenge Thumbnail"
+                            class="img-fluid rounded" onclick="open100kPlayer()" id="Main100KThumbnail">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div class="container-fluid mb-5" style="display: none;" id="100kplayerandplaylist">
-        <div class="row justify-content-center">
-            <div class="col-md-9 col-lg-8" id="playerContainer">
-                <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="pDmEYRhyusU"></div>
-            </div>
-            <div class="col-md-3 col-lg-3 pr0 pl0" id="playlist">
-                <div class="container-fluid overflow-auto" id="list">
-
-
-
-
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded pointer" onclick="playnow('pDmEYRhyusU')">
-                        <div class="col-5 pl0 pr0 position-relative">
-                            <img src="images/100K/part1.webp" class="img-fluid m-2 rounded">
+    <div class="container">
+        <div class="container-fluid mb-5" style="display: none;" id="100kplayerandplaylist">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-8" id="playerContainer">
+                    <div id="player1" data-plyr-provider="youtube" data-plyr-embed-id="pDmEYRhyusU"></div>
+                </div>
+                <div class="col-md-3 col-lg-3 pr0 pl0" id="playlist">
+                    <div class="container-fluid overflow-auto" id="list">
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded pointer" onclick="playnow('pDmEYRhyusU')">
+                            <div class="col-5 pl0 pr0 position-relative">
+                                <img src="images/100K/part1.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+                            </div>
                         </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 1 | Introduction To Programming </h5>
+    
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded pointer" onclick="playnow('qGGqnzvKjmM')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part2.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 2 | Variables Datatypes & I/O Operations</h5>
+                            </div>
                         </div>
-                    </div>
-
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded pointer" onclick="playnow('qGGqnzvKjmM')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part2.webp" class="img-fluid m-2 rounded">
+    
+    
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('W7s0upNfcKY')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part3.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 3 | Conditional Statements IF, IF ELSE, SWITCH</h5>
+                            </div>
                         </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 2 | Variables Datatypes & I/O Operations</h5>
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('YfaJzXFbFcQ')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part4.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 4 | Loops: FOR Loop</h5>
+                            </div>
                         </div>
-                    </div>
-
-
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('W7s0upNfcKY')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part3.webp" class="img-fluid m-2 rounded">
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('d0drJeqmiws')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part5.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 5 | Array and Array Operations</h5>
+                            </div>
                         </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 3 | Conditional Statements IF, IF ELSE, SWITCH</h5>
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('lFgyEWxNI58')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part6.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 6 | Functions and Type of Functions</h5>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('YfaJzXFbFcQ')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part4.webp" class="img-fluid m-2 rounded">
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('G1FahZ5Sgik')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part7.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 7 | OOP Concepts: Class and Objects</h5>
+                            </div>
                         </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 4 | Loops: FOR Loop</h5>
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('MxuTGyBz9BA')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part8.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 8 | Constructors, Inheritance, Polymorphism</h5>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('d0drJeqmiws')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part5.webp" class="img-fluid m-2 rounded">
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('MRFD3Cnug1Q')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part9.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 9 | Abstract Class, Exceptions, Threads</h5>
+                            </div>
                         </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 5 | Array and Array Operations</h5>
-                        </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('lFgyEWxNI58')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part6.webp" class="img-fluid m-2 rounded">
-                        </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 6 | Functions and Type of Functions</h5>
-                        </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('G1FahZ5Sgik')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part7.webp" class="img-fluid m-2 rounded">
-                        </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 7 | OOP Concepts: Class and Objects</h5>
-                        </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('MxuTGyBz9BA')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part8.webp" class="img-fluid m-2 rounded">
-                        </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 8 | Constructors, Inheritance, Polymorphism</h5>
-                        </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('MRFD3Cnug1Q')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part9.webp" class="img-fluid m-2 rounded">
-                        </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 9 | Abstract Class, Exceptions, Threads</h5>
-                        </div>
-                    </div>
-
-                    <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('AUxawaW4DAc')">
-                        <div class="col-5 pl0 pr0">
-                            <img src="images/100K/part10.webp" class="img-fluid m-2 rounded">
-                        </div>
-                        <div class="col-7 align-self-center">
-                            <h5 class="videoName">Part 10 | Calculator Project From Scratch</h5>
+    
+                        <div class="row bg-light videoItems mt-3 mb-3 rounded" onclick="playnow('AUxawaW4DAc')">
+                            <div class="col-5 pl0 pr0">
+                                <img src="images/100K/part10.webp" class="img-fluid m-2 rounded">
+                            </div>
+                            <div class="col-7 align-self-center">
+                                <h5 class="videoName">Part 10 | Calculator Project From Scratch</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -350,7 +360,7 @@
     </div>
 
     <div class="container mt-5 text-center">
-        <div class="dropdown">
+        <!-- <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle col-md-2 p-2 rounded-0 " type="button"
                 id="ExMemDropDownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="mr-5">Choose</span>
@@ -363,22 +373,69 @@
                 <li><a class="dropdown-item" href="#">Data Structure Challenge</a></li>
                 <li><a class="dropdown-item" href="#">Python Challenge</a></li>
             </ul>
-        </div>
-    </div>
+        </div> -->
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 tutorialThumb position-relative p-2">
+                    <a href="#">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <img src="images/playBtn.png" alt="challenge Play Button" style="cursor:pointer;"
+                                class="playButton">
+                        </div>
+                        <div>
+                            <img src="images/100kMainThumbnail-min.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 tutorialThumb position-relative p-2">
+                    <a href="#">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <img src="images/playBtn.png" alt="challenge Play Button" style="cursor:pointer;"
+                                class="playButton">
+                        </div>
+                        <div>
+                            <img src="images/100kMainThumbnail-min.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 tutorialThumb position-relative p-2">
+                    <a href="#">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <img src="images/playBtn.png" alt="challenge Play Button" style="cursor:pointer;"
+                                class="playButton">
+                        </div>
+                        <div>
+                            <img src="images/100kMainThumbnail-min.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 tutorialThumb position-relative p-2">
+                    <a href="#">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <img src="images/playBtn.png" alt="challenge Play Button" style="cursor:pointer;"
+                                class="playButton">
+                        </div>
+                        <div>
+                            <img src="images/100kMainThumbnail-min.png" alt="" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
 
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-12 text-center" id="allTutorials">
-                <img src="images/100K/100k-thumb.png" alt="100k coding challenge Thumbnail" class="img-fluid rounded"
-                    style="cursor:pointer; height: 36vw;" onclick="openPlayer()">
             </div>
         </div>
+
+
+
+
+
+
+
     </div>
 
     <div class="container-fluid " id="ExclusiveMembershipSection">
         <div class="container">
-            <h1 class="font-nunito text-center text-white pt-5">BECOME AN EXCLUSIVE MEMBER!</h1>
+            <h1 class="font-nunito text-center text-white pt-5 ">BECOME AN EXCLUSIVE MEMBER!</h1>
             <div class="row">
                 <div class="col-md-6 pt-5 text-white ExMemContent">
                     <p>
@@ -398,7 +455,7 @@
                         decisions.
                     </p>
                     <div class="text-center mt-5 mb-5">
-                        <a href="#" class="btn btnlg bg-light text-dark col-md-4 btnContactUs">Contact Us</a>
+                        <a href="contact_us.html" class="btn btnlg bg-light text-dark col-md-4 btnContactUs">Contact Us</a>
                     </div>
                 </div>
                 <div class="col-md-1">
@@ -415,7 +472,7 @@
     <div class="container-fluid" id="ExMemBenifitsSection">
         <div class="container">
             <div class="text-center mb-5">
-                <h1>Benefits of Exclusive Members</h1>
+                <h1 class="font-nunito">Benefits of Exclusive Members</h1>
             </div>
             <div class="row">
                 <div class="col-md-4 cards">
