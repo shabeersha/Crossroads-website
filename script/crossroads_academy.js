@@ -11,6 +11,8 @@ function getViewportSize() {
 let { width, height } = getViewportSize()
 let mainLogoHyperLink = document.getElementById("mainLogoHyperLink");
 let headLine = document.getElementsByClassName("headLine");
+const CAAboutSection = document.getElementById('CAAboutSection'); 
+const CAPara1= document.getElementById('CAPara1');
 
 console.log(width);
 console.log(height);
@@ -28,18 +30,24 @@ function navBgColor() {
 //Mobile Smallscreen(320px)
 if (width <= 320) {
     navBgColor();
+    CAAboutSection.classList.add("order-1","mt-4","text-center");
+    CAPara1.style.textAlign="justify";
     
 
 }
 //Mobile Mediumscreen(375px)
 else if (width <= 375) {
     navBgColor();
+    CAAboutSection.classList.add("order-1","mt-4","text-center");
+    CAPara1.style.textAlign="justify";
     
 
 }
 //Mobile Largescreen(425px)
 else if (width <= 425) {
     navBgColor();
+    CAAboutSection.classList.add("order-1","mt-4","text-center");
+    CAPara1.style.textAlign="justify";
 }
 else if (width < 768) {
     navBgColor();

@@ -12,6 +12,9 @@ function getViewportSize() {
 let { width, height } = getViewportSize()
 let mainLogoHyperLink = document.getElementById("mainLogoHyperLink");
 
+
+
+
 textarea = document.querySelector("#floatingTextarea");
 textarea.addEventListener('input', autoResize, false);
 
@@ -20,22 +23,25 @@ function autoResize() {
     this.style.height = this.scrollHeight + 'px';
 }
 
+function navBgColor() {
+    document.getElementById("navbar").style.backgroundColor="#1B1C1E";
+}
+
 
 
 
 //Mobile Smallscreen(320px)
 if (width <= 320) {
-
+    navBgColor();
 
 }
 //Mobile Mediumscreen(375px)
 else if (width <= 375) {
-
-
+    navBgColor();
 }
 //Mobile Largescreen(425px)
 else if (width <= 425) {
-
+    navBgColor();
 }
 else if (width < 768) {
 

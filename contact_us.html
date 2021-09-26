@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" /> -->
     <link rel="stylesheet" href="Stylesheet/mainStyle.css">
 
     <title>Crossroads Academy | Contact Us | Kerala's No. 1 Tech Youtube Channel</title>
@@ -38,8 +39,8 @@
     </nav>
 
     <div class="container mt-5 ">
-        <div class="row">
-            <div class="col-6 text-white">
+        <div class="row ">
+            <div class="col-md-6 text-white overflow-auto " style="max-height: 70vh;">
                 <div class="container">
                     <h2 class="mt-5">Get in Touch</h2>
 
@@ -62,9 +63,9 @@
                             <label for="emailInput" class="inputLabel">Email</label>
                         </div>
 
-                        <div class="form-floating mb-5">
-                            <textarea class="form-control inputFieldStyle" rows="5" placeholder="Leave a message here"
-                                id="floatingTextarea"></textarea>
+                        <div class="form-floating mb-5" id="messageBox">
+                            <textarea class="form-control inputFieldStyle hideScrollBar" rows="5"
+                                placeholder="Leave a message here" id="floatingTextarea"></textarea>
                             <label for="floatingTextarea2">Your Message</label>
                         </div>
 
@@ -75,7 +76,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-6 bg-light contactDiv col6FHD">
+            <div class="col-md-6 bg-light contactDiv col6FHD">
                 <div class="container">
                     <h2 class="mt-5 pl-2" style="padding-left:0.8em;">Contact Us</h2>
                     <div class="container mt-5">
@@ -128,17 +129,17 @@
                             </div>
                         </div>
                         <div class="row col-8 mx-auto">
-                            
-                                <div class="col-4 socialIcons">
-                                    <a href=""><img src="images/contactUs/youtube.png" ></a>
-                                </div>
-                                <div class="col-4 socialIcons">
-                                    <a href=""><img src="images/contactUs/linkedin.png" ></a>
-                                </div>
-                                <div class="col-4 socialIcons">
-                                    <a href=""><img src="images/contactUs/instagram.png" ></a>
-                                </div>
-                            
+
+                            <div class="col-4 socialIcons">
+                                <a href=""><img src="images/contactUs/youtube.png"></a>
+                            </div>
+                            <div class="col-4 socialIcons">
+                                <a href=""><img src="images/contactUs/linkedin.png"></a>
+                            </div>
+                            <div class="col-4 socialIcons">
+                                <a href=""><img src="images/contactUs/instagram.png"></a>
+                            </div>
+
                         </div>
                     </div>
 
@@ -150,6 +151,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> -->
     <script src="script/contact.js"></script>
 </body>
 

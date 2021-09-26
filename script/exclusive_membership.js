@@ -16,6 +16,7 @@ const main100KThumbnail = document.getElementById('Main100KThumbnail');
 const playlist = document.getElementById('playlist');
 const list = document.getElementById('list');
 const ExMemHead3 = document.getElementById('ExMemHead3');
+const ExMemContent = document.getElementById('ExMemContent');
 let i = 0;
 
 console.log(width);
@@ -82,8 +83,8 @@ if (width <= 320) {
     playlist.classList.add("mt-3");
     list.style.height="118vw";
     ExMemHead3.style.marginTop="2rem";
-    
-
+    console.log("Large screen 3");
+    ExMemContent.classList.add("order-1");
 
 }
 //Mobile Mediumscreen(375px)
@@ -99,6 +100,8 @@ else if (width <= 375) {
     playlist.classList.add("mt-3");
     list.style.height="118vw";
     ExMemHead3.style.marginTop="2rem";
+    console.log("Large screen 2");
+    ExMemContent.classList.add("order-1");
 
 
 
@@ -106,6 +109,21 @@ else if (width <= 375) {
 //Mobile Largescreen(425px)
 else if (width <= 425) {
     navBgColor();
+
+    document.getElementById("ExMemAboutSection").classList.add("mt-5");
+    document.getElementById("ExMemPara1").style.marginLeft = "auto";
+    document.getElementById("ExMemPara2").style.marginLeft = "auto";
+    document.getElementById("ExMemPara1").style.fontSize = "1em";
+    document.getElementById("ExMemPara2").style.fontSize = "1em";
+    document.getElementById("ExMemHead2").style.fontSize = "2em";
+    document.getElementById("ExMemPara3").style.fontSize = "1em";
+    playlist.classList.add("mt-3");
+    list.style.height="118vw";
+    ExMemHead3.style.marginTop="2rem";
+    console.log("Large screen");
+    ExMemContent.classList.add("order-1");
+    
+
 }
 else if (width < 768) {
     navBgColor();

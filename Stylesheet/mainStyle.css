@@ -395,6 +395,19 @@ button:focus:not(:focus-visible) {
     
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollBar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScrollBar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.bgDualtone{
+    background-color: #1B1C1E;
+}
 
 
 
